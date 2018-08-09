@@ -5,7 +5,7 @@ public class BookService {
 
     public Book getBook(Book book){
 
-        return book;
+        return new Book(book.getBookId(),book.getBookName(),book.getBookAutorName());
     }
 
     public Book tellBookNameForGettingBook(String bookId, String bookName, String bookAuthorName){
